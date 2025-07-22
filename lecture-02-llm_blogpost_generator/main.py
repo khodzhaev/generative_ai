@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# Load API key from env
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 with open("lesson-1-transcript.txt", "r", encoding="utf-8") as f:
@@ -20,7 +19,6 @@ Transcript:
 {transcript}
 """
 
-# Generate blog post
 response = client.chat.completions.create(
     model="gpt-4",
     messages=[
@@ -33,7 +31,6 @@ response = client.chat.completions.create(
 
 blog_post = response.choices[0].message.content
 
-# Save result
 with open("README.md", "w", encoding="utf-8") as f:
     f.write(blog_post)
 
