@@ -1,0 +1,6 @@
+
+PROMPT:
+"Write a blogpost with illustrations about our first lecture. Use lecture transcript as a datasource. Include pictures in the post. Store it in README.md file in appropriate folder in git. Use only AI generated content. Do not edit the text manually."
+
+COMPLETION:
+Generated a markdown blog post titled "Our First Lecture" summarizing the first class of a generative AI course, based on the transcript. Created and embedded an AI-generated illustration summarizing the key points: introduction, AI/ML overview, LLMs, and course structure. Saved everything in README.md with image. This workflow file documents the used prompt and outcome.
