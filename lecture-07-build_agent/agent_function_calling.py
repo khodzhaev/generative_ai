@@ -10,7 +10,7 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def query_database(sql_query):
-    conn = sqlite3.connect("orders.db")
+    conn = sqlite3.connect("../business_data.db")
     cursor = conn.cursor()
     cursor.execute(sql_query)
     result = cursor.fetchall()
